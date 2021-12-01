@@ -1,10 +1,10 @@
-package com.alce.exchangenotifications_ms.controllers;
+package com.alce.exchange_ms.controllers;
 
-import com.alce.exchangenotifications_ms.exceptions.BookNotFoundException;
-import com.alce.exchangenotifications_ms.models.ExchangeNotificationRequest;
-import com.alce.exchangenotifications_ms.models.ExchangeNotificationResponse;
-import com.alce.exchangenotifications_ms.repositories.ExchangeRepository;
-import com.alce.exchangenotifications_ms.repositories.ExchangeRepositoryResponse;
+import com.alce.exchange_ms.exceptions.BookNotFoundException;
+import com.alce.exchange_ms.models.ExchangeNotificationRequest;
+import com.alce.exchange_ms.models.ExchangeNotificationResponse;
+import com.alce.exchange_ms.repositories.ExchangeRepository;
+import com.alce.exchange_ms.repositories.ExchangeRepositoryResponse;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;

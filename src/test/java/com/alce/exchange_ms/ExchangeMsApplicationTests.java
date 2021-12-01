@@ -1,10 +1,10 @@
-package com.alce.exchangenotifications_ms;
+package com.alce.exchange_ms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BooksmanagementMsApplicationTests {
+class ExchangeMsApplicationTests {
 
 	@Test
 	void contextLoads() {

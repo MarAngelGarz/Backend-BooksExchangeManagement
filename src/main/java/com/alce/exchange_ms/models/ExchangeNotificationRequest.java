@@ -1,4 +1,4 @@
-package com.alce.exchangenotifications_ms.models;
+package com.alce.exchange_ms.models;
 
 import java.util.Date;
 

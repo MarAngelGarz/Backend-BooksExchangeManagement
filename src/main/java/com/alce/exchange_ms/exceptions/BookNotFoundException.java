@@ -1,4 +1,4 @@
-package com.alce.exchangenotifications_ms.exceptions;
+package com.alce.exchange_ms.exceptions;
 
 public class BookNotFoundException extends RuntimeException {
     public BookNotFoundException(String message){

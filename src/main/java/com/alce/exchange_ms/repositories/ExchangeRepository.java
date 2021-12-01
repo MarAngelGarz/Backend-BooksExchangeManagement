@@ -1,6 +1,6 @@
-package com.alce.exchangenotifications_ms.repositories;
+package com.alce.exchange_ms.repositories;
 
-import com.alce.exchangenotifications_ms.models.ExchangeNotificationRequest;
+import com.alce.exchange_ms.models.ExchangeNotificationRequest;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.List;
 

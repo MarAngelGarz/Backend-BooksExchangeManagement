@@ -1,4 +1,4 @@
-package com.alce.exchangenotifications_ms.exceptions;
+package com.alce.exchange_ms.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

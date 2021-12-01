@@ -1,14 +1,14 @@
-package com.alce.exchangenotifications_ms;
+package com.alce.exchange_ms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 
-public class ExchangeApplication {
+public class ExchangeMsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ExchangeApplication.class, args);
+		SpringApplication.run(ExchangeMsApplication.class, args);
 	}
 
 }

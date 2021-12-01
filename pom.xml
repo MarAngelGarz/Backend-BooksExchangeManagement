@@ -9,9 +9,9 @@
     <relativePath/> <!-- lookup parent from repository -->
 </parent>
 <groupId>com.alce</groupId>
-<artifactId>booksmanagement_ms</artifactId>
+<artifactId>exchange_ms</artifactId>
 <version>0.0.1-SNAPSHOT</version>
-<name>booksmanagement_ms</name>
+<name>exchange_ms</name>
 <description>Microservice Books Management</description>
 <properties>
     <java.version>11</java.version>
