@@ -27,8 +27,9 @@ public class ExchangeNotificationControler {
     }
 
     // get notifications of an exchange
-    @GetMapping("/exchangeNoti/{idExchange}")
+    /* @GetMapping("/exchangeNoti/{idExchange}")
     List<ExchangeNotification> getAllNotificationsExchange(@PathVariable String idExchange) {
-        return exchangeNotificationRepository.findByIdExchage(idExchange);
-    }
+        List<ExchangeNotification> notifications = exchangeNotificationRepository.findByIdExchage(idExchange);
+        return notifications;
+    } */
 }

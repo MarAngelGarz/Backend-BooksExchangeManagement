@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ExchangeNotificationRepository extends MongoRepository<ExchangeNotification, String> {
 
-    List<ExchangeNotification> findByIdExchage(String idExchange);
+    //List<ExchangeNotification> findByIdExchage(String idExchange);
 
 }

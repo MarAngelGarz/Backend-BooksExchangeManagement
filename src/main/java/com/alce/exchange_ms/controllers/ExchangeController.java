@@ -4,6 +4,9 @@ import com.alce.exchange_ms.exceptions.ExchangeNotFoundException;
 import com.alce.exchange_ms.models.Exchange;
 import com.alce.exchange_ms.repositories.ExchangeRepository;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,7 +37,7 @@ public class ExchangeController {
                 .orElseThrow(() -> new ExchangeNotFoundException("No se encontró ningún intercambio"));
     }
 
-    // delete exchange
+    // update exchange
     @PutMapping("/exchange/{id}")
     Exchange updateExchange(@PathVariable String id, @RequestBody Exchange exchange) {
         exchangeRepository.findById(id)
@@ -42,4 +45,11 @@ public class ExchangeController {
         return exchangeRepository.save(exchange);
     }
 
+    // delete exchange
+    @DeleteMapping("/exchange/{id}")
+    ResponseEntity<?> deleteBook(@PathVariable String id){
+        Exchange book = exchangeRepository.findById(id).orElseThrow(()->new ExchangeNotFoundException("No se encontró ningún intercambio"));
+        exchangeRepository.delete(book);
+        return new ResponseEntity<>("El intercambio fue eliminado", HttpStatus.OK);
+    }
 }
