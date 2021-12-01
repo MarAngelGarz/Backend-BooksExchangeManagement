@@ -1,11 +1,10 @@
 package com.alce.exchange_ms.repositories;
 
-import com.alce.exchange_ms.models.ExchangeNotificationRequest;
+import com.alce.exchange_ms.models.Exchange;
+
 import org.springframework.data.mongodb.repository.MongoRepository;
-import java.util.List;
 
-public interface ExchangeRepository extends MongoRepository<ExchangeNotificationRequest, Integer> {
-    List<ExchangeNotificationRequest> findByIdOwner(int idOwner);
-    List<ExchangeNotificationRequest> findByIdAplicant(int idAplicant);
-
+public interface ExchangeRepository extends MongoRepository<Exchange, String>{
+    
+    
 }
