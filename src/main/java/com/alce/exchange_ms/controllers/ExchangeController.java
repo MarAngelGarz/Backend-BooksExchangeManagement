@@ -23,6 +23,11 @@ public class ExchangeController {
         this.exchangeRepository = exchangeRepository;
     }
 
+    @GetMapping("/")
+    String checkMessage(){
+        return "Everything went well, backend to the air baby";
+    }
+
     // create new exchange
     @PostMapping("/exchange")
     Exchange newExchange(@RequestBody Exchange exchange) {
